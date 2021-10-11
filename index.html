@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaDeveloper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="logo.jpg"></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <li><a href="#">Weekly Quiz</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Hire Team</a></li>
+                <li><a href="#">Guest post</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+        <div class="content">
+            <div class="title">Assignmetn4 JavaDeveloper Zone</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, excepturi. Officiis placeat repellat et
+                eum nulla ad, similique totam recusandae cupiditate ea tempora. Nisi doloremque temporibus hic facere,
+                necessitatibus maiores aperiam placeat incidunt quod a fugit porro enim culpa, maxime rem, corrupti
+                facilis dignissimos quo omnis qui? Tenetur unde voluptatum excepturi rerum aperiam recusandae porro,
+                mollitia vero. Corrupti, ducimus doloremque, magnam officia reiciendis tenetur at quam dicta in non
+                aperiam omnis alias libero voluptatum, quasi porro sint sunt commodi cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at fugit dicta ratione aliquam, sed
+                numquam accusamus inventore corporis qui sit. Architecto asperiores doloremque voluptatem, quae itaque
+                perferendis quas voluptatibus quos nam ducimus. Id qui odio aliquid, quod dolorem cupiditate, ad, fugit
+                a quia voluptates possimus repellat accusantium voluptas incidunt.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur aliquid quae corrupti expedita
+                repudiandae esse tempore illo molestias praesentium, sint perspiciatis non. Quia nemo iure dolore
+                molestias architecto laudantium eius illo velit possimus quis, corporis quas animi inventore nihil nulla
+                aspernatur quam libero ex earum vitae esse, facere illum! Esse mollitia praesentium explicabo in minus
+                accusantium voluptatem suscipit unde.</p>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
